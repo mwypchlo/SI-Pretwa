@@ -24,5 +24,7 @@ namespace SI_PretwaGUI
         {
             InitializeComponent();
         }
+
+        private bool info;
     }
 }
