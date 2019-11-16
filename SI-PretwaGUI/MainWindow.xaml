@@ -5,8 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SI_PretwaGUI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="600" Width="800">
     <Grid>
-        
+        <Grid x:Name="logo" HorizontalAlignment="Left" Height="400" Margin="135,95,0,74" VerticalAlignment="Center" Width="500">
+            <Grid.Background>
+                <ImageBrush ImageSource="Grafiki\1200px-Pretwa_board_start_position.png"/>
+            </Grid.Background>
+            <Button Content="Zakończ" HorizontalAlignment="Left" Margin="337,408,0,-48" VerticalAlignment="Top" Width="162" Click="Button_Click" Height="40" Background="SteelBlue" BorderBrush="Black" Foreground="White">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+            <Button Content="Rozpocznij grę" HorizontalAlignment="Left" Margin="0,408,0,-48" VerticalAlignment="Top" Width="162" Click="Button_Click_1" Height="40" Background="Crimson" BorderBrush="Black" Foreground="White">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+        </Grid>
+        <TextBlock HorizontalAlignment="Left" Height="80" Margin="263,10,-271,0" VerticalAlignment="Top" Width="800" FontSize="72" FontFamily="Arial" Foreground="DarkOrange">
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect><Run Language="pl-pl" Text="Pretwa"/></TextBlock>
+        <TextBlock Margin="688,10,-96,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="120" TextAlignment="Left" FontSize="14" HorizontalAlignment="Left" Width="200"><Run Language="pl-pl" Text="Twórcy:"/><LineBreak/><Run Language="pl-pl" Text="Rafał Adamski"/><LineBreak/><Run Language="pl-pl" Text="Tomasz Weiss"/><LineBreak/><Run Language="pl-pl" Text="Michał Wypchło"/><LineBreak/><Run Language="pl-pl" Text="Zespół 1"/></TextBlock>
     </Grid>
 </Window>

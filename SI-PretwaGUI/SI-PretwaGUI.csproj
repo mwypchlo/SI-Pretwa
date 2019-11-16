@@ -94,5 +94,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Grafiki\1200px-Pretwa_board_start_position.png" />
+    <Content Include="Grafiki\gracz.png" />
+    <Resource Include="Grafiki\gracz_hover.png" />
+    <Resource Include="Grafiki\komputer.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
