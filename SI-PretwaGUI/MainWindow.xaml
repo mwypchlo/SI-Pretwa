@@ -5,34 +5,41 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SI_PretwaGUI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="700" Width="1200">
+        Title="MainWindow" Height="720" Width="1280">
     <Grid>
-        <Grid x:Name="image" HorizontalAlignment="Left" Height="480" Margin="135,95,0,74" VerticalAlignment="Center" Width="480">
-            <Grid.Background>
-                <ImageBrush ImageSource="Grafiki\pretwa_logo.png"/>
-            </Grid.Background>
+        <Grid.Background>
+            <ImageBrush ImageSource="Grafiki/background.jpg"/>
+        </Grid.Background>
+        <Grid x:Name="board" HorizontalAlignment="Left" Height="679" Margin="0,10,0,0" VerticalAlignment="Center" Width="855">
+            <Grid Height="500" Width="500">
+                <Grid.Background>
+                    <ImageBrush ImageSource="Grafiki/board_3.png"/>
+                </Grid.Background>
+            </Grid>
         </Grid>
-        <Grid x:Name="content" HorizontalAlignment="right" Height="700" Margin="0,0,80,0" VerticalAlignment="Center" Width="480">
-            <TextBlock TextAlignment="Center" Height="130" Margin="0,120,0,0" VerticalAlignment="Top" Width="480" FontSize="85" FontFamily="MV Boli" Foreground="#bd9331" TextDecorations="{x:Null}">
-                <Run Language="pl-pl" Text="Pretwa" TextDecorations="Underline"/>
-            </TextBlock>
-            <TextBlock Margin="0,0,0,20" TextWrapping="Wrap" Height="120" TextAlignment="Center" FontSize="14" HorizontalAlignment="Center" Width="200">
-                <Run Language="pl-pl" FontSize="16" Text="Twórcy:" FontWeight="Bold"/><LineBreak/>
-                <Run Language="pl-pl" Text="Rafał Adamski"/><LineBreak/>
-                <Run Language="pl-pl" Text="Tomasz Weiss"/><LineBreak/>
-                <Run Language="pl-pl" Text="Michał Wypchło"/><LineBreak/>
-                <Run Language="pl-pl" Text="Zespół 1" FontStyle="Italic" TextDecorations="Underline"/>
-            </TextBlock>
-            <Button Content="Zakończ" HorizontalAlignment="Right" Margin="0,500,50,0" VerticalAlignment="Top" Width="162" Click="Button_Click" Height="40" Background="SteelBlue" BorderBrush="Black" Foreground="White">
-                <Button.Effect>
-                    <BlurEffect/>
-                </Button.Effect>
-            </Button>
-            <Button Content="Rozpocznij grę" HorizontalAlignment="Left" Margin="50,500,0,0" VerticalAlignment="Top" Width="162" Click="Button_Click_1" Height="40" Background="Crimson" BorderBrush="Black" Foreground="White">
-                <Button.Effect>
+        <Grid x:Name="menu" HorizontalAlignment="right" Height="Auto" Margin="0,0,0,0" Width="412">
+            <TextBlock TextAlignment="Center" Height="150" VerticalAlignment="Top" FontSize="95" FontFamily="Comic Sans MS" Foreground="#FF644545" TextDecorations="{x:Null}" RenderTransformOrigin="0.5,0.5" Margin="0,80,0,0">
+                <TextBlock.Effect>
                     <DropShadowEffect/>
-                </Button.Effect>
-            </Button>
+                </TextBlock.Effect>
+                <Run Language="pl-pl" Text="Pretwa"/>
+            </TextBlock>
+            <Grid Height="150" Margin="0,270,0,269">
+                <TextBlock Margin="10,0,219,0" TextWrapping="Wrap" VerticalAlignment="Center" TextAlignment="Center" FontSize="14" Width="183">
+                    <Run Language="pl-pl" FontSize="24" Text="Twórcy:" FontWeight="Bold" Foreground="#FFBDBDBD" FontFamily="Corbel"/>
+                </TextBlock>
+                <TextBlock Margin="198,43,10,34" TextWrapping="Wrap" VerticalAlignment="Center" TextAlignment="Left" FontSize="18" Width="204" FontFamily="Corbel" Height="73" Foreground="#FFBDBDBD">
+                    <Run Language="pl-pl" Text="Rafał Adamski"/><LineBreak/>
+                    <Run Language="pl-pl" Text="Tomasz Weiss"/><LineBreak/>
+                    <Run Language="pl-pl" Text="Michał Wypchło"/><LineBreak/>
+                </TextBlock>
+            </Grid>
+            <Grid VerticalAlignment="Bottom" Height="264">
+                <Button Content="Zakończ" HorizontalAlignment="Right" Margin="0,122,10,0" VerticalAlignment="Top" Width="392" Click="Button_Click" Height="55" Background="#FFA82A2A" BorderBrush="Black" Foreground="#FF510000" FontSize="18" Cursor="Hand" FontWeight="Bold">
+                </Button>
+                <Button Content="Rozpocznij grę" HorizontalAlignment="Left" Margin="10,46,0,0" VerticalAlignment="Top" Width="392" Click="Button_Click_1" Height="55" Background="#FF28A249" BorderBrush="Black" Foreground="#FF005508" FontSize="18" Cursor="Hand" FontWeight="Bold">
+                </Button>
+            </Grid>
         </Grid>
     </Grid>
 </Window>

@@ -96,7 +96,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Grafiki\1200px-Pretwa_board_start_position.png" />
+    <Resource Include="Grafiki\wood_3.png" />
+    <Resource Include="Grafiki\pretwa.png" />
+    <Resource Include="Grafiki\board_3.png" />
+    <Resource Include="Grafiki\background.jpg" />
     <Content Include="Grafiki\gracz.png" />
     <Resource Include="Grafiki\gracz_hover.png" />
     <Resource Include="Grafiki\komputer.png" />
