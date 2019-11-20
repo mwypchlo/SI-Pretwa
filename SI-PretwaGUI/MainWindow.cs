@@ -1,11 +1,12 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 
 namespace SI_PretwaGUI
 {
     public partial class MainWindow : Window
     {
-
+       
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
@@ -13,9 +14,9 @@ namespace SI_PretwaGUI
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Rozpoczynam grę");
-            this.Close();
-        }
+            Game subWindow = new Game();
+            subWindow.Show();
+          
+         }
     }
-
 }
