@@ -5,12 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SI_PretwaGUI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="720" Width="1280">
+        Title="Pretwa: Start"
+        Height="720"
+        Width="1280"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        AllowsTransparency="True">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="Grafiki/background.jpg"/>
         </Grid.Background>
-        <Grid x:Name="board" HorizontalAlignment="Left" Height="679" Margin="0,10,0,0" VerticalAlignment="Center" Width="855">
+        <Grid x:Name="board" HorizontalAlignment="Left" Height="689" VerticalAlignment="Center" Width="855">
             <Grid Height="500" Width="500">
                 <Grid.Background>
                     <ImageBrush ImageSource="Grafiki/board_3.png"/>
