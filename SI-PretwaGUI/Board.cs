@@ -23,8 +23,5 @@ namespace SI_PretwaGUI
             {    Space.Vertical,    Space.DiagonalRight,    Space.None,         Space.None,          Space.None,        Space.None,             Space.Vertical,   Space.None,           Space.None,         Space.None,         Space.None,            Space.DiagonalLeft, Space.Vertical},
             {    Space.Player2,     Space.Horizontal,       Space.Horizontal,   Space.Horizontal,    Space.Horizontal,  Space.Horizontal,       Space.Player2,    Space.Horizontal,     Space.Horizontal,   Space.Horizontal,   Space.Horizontal,      Space.Horizontal,   Space.Player2},
         };
-        
-   
-
 }
 }

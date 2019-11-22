@@ -20,13 +20,8 @@ namespace SI_PretwaGUI
     /// </summary>
     public partial class Game : Window
     {
-
-
         public Game()
         {
-
-
-
             InitializeComponent();
         }
 

@@ -16,7 +16,6 @@ namespace SI_PretwaGUI
         {
             Game subWindow = new Game();
             subWindow.Show();
-          
          }
     }
 }
