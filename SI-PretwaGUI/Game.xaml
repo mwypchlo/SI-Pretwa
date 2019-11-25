@@ -6,11 +6,18 @@
         xmlns:local="clr-namespace:SI_PretwaGUI"
         mc:Ignorable="d"
         ResizeMode="NoResize"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
         Title="Game" Height="800" Width="800">
     <Grid MouseDown="Grid_MouseMove" Background="Transparent">
         <Label HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <TextBlock Name="Textblock" HorizontalAlignment="Left" Margin="10,4,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="36" Width="155"/>
         <TextBlock Name="Textblock2" HorizontalAlignment="Left" Margin="10,32,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="36" Width="155"/>
         <Image Source="Grafiki/wood_3.png"></Image>
+        <Button Content="Zakończ" HorizontalAlignment="Left" Margin="700,771,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Content="Resetuj" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="700,746,0,0"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,775,0,0" TextWrapping="Wrap" Text="Tutaj będziemy wyświetlać czyj ruch " VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="545,10,0,0" TextWrapping="Wrap" Text="Ilość wygranych" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="666,10,0,0" TextWrapping="Wrap" Text="Ilość przegranych" VerticalAlignment="Top"/>
     </Grid>
 </Window>

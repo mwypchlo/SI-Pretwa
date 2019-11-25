@@ -24,5 +24,10 @@ namespace SI_PretwaGUI
             Textblock.Text = Mouse.GetPosition(this).X.ToString();
             Textblock2.Text = Mouse.GetPosition(this).Y.ToString();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
