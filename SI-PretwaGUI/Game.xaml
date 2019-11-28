@@ -10,6 +10,7 @@
         WindowStartupLocation="CenterScreen"
         Title="Game" Height="800" Width="800">
     <Grid MouseDown="Grid_MouseMove" Background="Transparent">
+
         <Label HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <TextBlock Name="Textblock" HorizontalAlignment="Left" Margin="10,4,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="36" Width="155"/>
         <TextBlock Name="Textblock2" HorizontalAlignment="Left" Margin="10,32,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="36" Width="155"/>
@@ -19,5 +20,39 @@
         <TextBlock HorizontalAlignment="Left" Margin="10,775,0,0" TextWrapping="Wrap" Text="Tutaj będziemy wyświetlać czyj ruch " VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="545,10,0,0" TextWrapping="Wrap" Text="Ilość wygranych" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="666,10,0,0" TextWrapping="Wrap" Text="Ilość przegranych" VerticalAlignment="Top"/>
+        <Grid x:Name="z8" Margin="271,0,269,141" RenderTransformOrigin="0.486,0.449" Width="60" Height="60" VerticalAlignment="Bottom">
+            <Button x:Name="btn66" Tag="66" Style="{StaticResource playersButton}" Click="z1Btn_Click" Margin="-2,-33,2,33"/>
+        </Grid>
+        <Grid x:Name="z13" Margin="271,0,269,271" RenderTransformOrigin="0.486,0.449" Width="60" Height="60" VerticalAlignment="Bottom">
+            <Button x:Name="btn46" Tag="46" Style="{StaticResource playersButton}" Click="z1Btn_Click" Margin="0,-3,0,3"/>
+        </Grid>
+        <Grid x:Name="z14" Margin="403,0,137,271" RenderTransformOrigin="0.486,0.449" Width="60" Height="60" VerticalAlignment="Bottom"/>
+        <Grid x:Name="z15" Margin="528,0,12,271" RenderTransformOrigin="0.486,0.449" Width="60" Height="60" VerticalAlignment="Bottom"/>
+        <Grid x:Name="z16" Margin="10,0,530,402" RenderTransformOrigin="0.486,0.449" Width="60" Height="60" VerticalAlignment="Bottom"/>
+        <Grid x:Name="z17" Margin="141,0,399,402" RenderTransformOrigin="0.486,0.449" Width="60" Height="60" VerticalAlignment="Bottom"/>
+        <Grid x:Name="z18" Margin="271,0,269,402" RenderTransformOrigin="0.486,0.449" Width="60" Height="60" VerticalAlignment="Bottom"/>
+        <Grid x:Name="z19" Margin="399,0,141,402" RenderTransformOrigin="0.486,0.449" Width="60" Height="60" VerticalAlignment="Bottom">
+            <Button x:Name="btn26" Tag="26" Style="{StaticResource aiButton}" Click="z1Btn_Click" Margin="-40,-23,40,23"/>
+        </Grid>
+        <Grid x:Name="z21" Margin="10,0,530,530" RenderTransformOrigin="0.486,0.449" Width="60" Height="60" VerticalAlignment="Bottom">
+            <Button x:Name="btn60" Tag="60" Style="{StaticResource playersButton}" Click="z1Btn_Click" Margin="2,5,-2,-5"/>
+        </Grid>
+        <Grid x:Name="z25" Margin="528,0,12,530" RenderTransformOrigin="0.486,0.449" Width="60" Height="60" VerticalAlignment="Bottom">
+            <Button x:Name="btn08" Tag="08" Style="{StaticResource aiButton}" Click="z1Btn_Click" Margin="-3,14,3,-14" RenderTransformOrigin="2.358,0.7"/>
+        </Grid>
+        <Button x:Name="btn24" Tag="24" Style="{StaticResource aiButton}" Click="z1Btn_Click" Margin="371,264,369,476"/>
+        <Button x:Name="btn44" Tag="44" Style="{StaticResource emptyField}" Click="z1Btn_Click" Margin="370,368,370,372"/>
+        <Button x:Name="btn04" Tag="04" Style="{StaticResource aiButton}" Click="z1Btn_Click" Margin="371,162,369,578"/>
+        <Button x:Name="btn06" Tag="06" Style="{StaticResource aiButton}" Click="z1Btn_Click" Margin="372,68,368,672"/>
+        <Button x:Name="btn28" Tag="28" Style="{StaticResource aiButton}" Click="z1Btn_Click" Margin="546,269,194,471"/>
+        <Button x:Name="btn64" Tag="64" Style="{StaticResource playersButton}" Click="z1Btn_Click" Margin="370,672,370,68"/>
+        <Button x:Name="btn42" Tag="42" Style="{StaticResource aiButton}" Click="z1Btn_Click" Margin="456,420,284,320"/>
+        <Button x:Name="btn22" Tag="22" Style="{StaticResource aiButton}" Click="z1Btn_Click" Margin="544,468,196,272"/>
+        <Button x:Name="btn40" Tag="40" Style="{StaticResource aiButton}" Click="z1Btn_Click" Margin="638,518,102,222"/>
+        <Button x:Name="btn48" Tag="48" Style="{StaticResource playersButton}" Click="z1Btn_Click" Margin="276,315,464,425"/>
+        <Button x:Name="btn62" Tag="62" Style="{StaticResource playersButton}" Click="z1Btn_Click" Margin="193,269,547,471"/>
+        <Button x:Name="btn82" Tag="82" Style="{StaticResource playersButton}" Click="z1Btn_Click" Margin="282,427,458,313"/>
+        <Button x:Name="btn80" Tag="80" Style="{StaticResource playersButton}" Click="z1Btn_Click" Margin="192,478,548,262"/>
+        <Button x:Name="btn86" Tag="86" Style="{StaticResource playersButton}" Click="z1Btn_Click" Margin="104,522,636,218"/>
     </Grid>
 </Window>

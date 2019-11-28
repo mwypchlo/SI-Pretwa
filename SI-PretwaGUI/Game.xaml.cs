@@ -6,6 +6,9 @@ using System.Windows.Threading;
 using System;
 using System.Windows.Input;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Windows.Controls;
+using System.Windows.Media.Animation;
 
 namespace SI_PretwaGUI
 {
@@ -16,7 +19,17 @@ namespace SI_PretwaGUI
     public partial class Game : Window
     {
         public List<System.Windows.Point> BoardPoints = new List<System.Windows.Point>();
+    
 
+        List<Grid> czerwone = new List<Grid>();
+        List<Grid> zolte = new List<Grid>();
+        private Boolean pierwszyKlik; //kazdy ruch to dwa klikniecia - zrodlo i cel
+        private Boolean blokujPionek; //zmusza gracza do gry jednym pionkiem (wielokrotne bicie)
+        private Boolean ruchWykonany;
+        private int[] mv, xy, blokowany;
+        private System.Windows.Controls.Button sndr, tempBtn;
+        private DoubleAnimation fadeIn;
+        private double anlen;
         private void FillGameBoard()
         {
             BoardPoints.Add(new System.Windows.Point(400, 401)); //0
@@ -55,6 +68,11 @@ namespace SI_PretwaGUI
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void z1Btn_Click(object sender, RoutedEventArgs e)
+        {                
+            
         }
     }
 }
