@@ -65,10 +65,18 @@ namespace SI_PretwaGUI
 
         }
 
+        private void ResButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+           Game reset = new Game();
+            reset.Show();
+        }
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Close();
         }
+
 
         private void z1Btn_Click(object sender, RoutedEventArgs e)
         {                
